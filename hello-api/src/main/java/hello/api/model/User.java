@@ -3,13 +3,21 @@
  */
 package hello.api.model;
 
+import java.io.Serializable;
+
 /**
  * @author jack
  *
  */
-public class User {
+public class User implements Serializable {
 	private String id;
 	private String name;
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", age=" + age + "]";
+	}
+
 	private int age;
 
 	public String getName() {
