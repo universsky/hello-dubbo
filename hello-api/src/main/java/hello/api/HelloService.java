@@ -9,20 +9,23 @@
 
 package hello.api;
 
-/**  
- * 类名:HelloService    
- * 功能:TODO     
- * 日期: 2015年11月5日 下午7:59:17    
- * @author 一剑  
- * @version 1.0.0   
- * @since  JDK 1.7  
- * @see        
+import hello.api.model.User;
+
+/**
+ * 类名:HelloService 功能:TODO 日期: 2015年11月5日 下午7:59:17
+ * 
+ * @author 一剑
+ * @version 1.0.0
+ * @since JDK 1.7
+ * @see
  */
 
 public interface HelloService {
 
-    public String say(String word);
+	public String say(String word);
 
+	public String speak(String content, int times);
+	
+	public User queryUser(String id);
 
 }
-
